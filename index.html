@@ -1,0 +1,26 @@
+<!doctype html>
+<html dir="ltr" lang="ja">
+<head>
+<meta charset="utf-8">
+<title>てすとさいと('ω')</title>
+<style>
+</style>
+</head>
+<body>
+お名前は？_(:3」∠)_<br>
+<input id="name">
+<button id="button">あいさつ</button>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+$(function(){
+	$('#button').click(function(){
+		if ($('#name').val().length === 0) {
+			alert('お名前が入力されていません');
+		} else {
+			alert($('#name').val() + ' さん こんにちは');
+		}
+	});
+});
+</script>
+</body>
+</html>
