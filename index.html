@@ -4,36 +4,28 @@
 <meta charset="utf-8">
 <title>てすとさいと('ω')</title>
 <style>
+h2{
+	text-align: center;
+}
+#rass{
+	width: 500px;
+	height: 500px;
+	margin: 0px auto;
+}
 </style>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 </head>
 <body>
-お名前は？_(:3」∠)_<br>
-<input id="name">
-<button id="button">あいさつ</button>
-<br>
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-<model-viewer  
+<h2>model-viewerテスト_(:3」∠)_</h2>
+<model-viewer 
 ar
-alt="きぐるみ猫"
+id="rass"
+alt="きぐるみ猫" 
 src="rass.glb" 
-style="width:800px;height:1000px;"                  
-background-color="#70BCD1"
-shadow-intensity="0.7"
-camera-controls
-interaction-prompt="auto"
+shadow-intensity="0.7" 
+camera-controls 
+interaction-prompt="auto" 
 auto-rotate ar magic-leap>
 </model-viewer>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script>
-$(function(){
-	$('#button').click(function(){
-		if ($('#name').val().length === 0) {
-			alert('お名前が入力されていません');
-		} else {
-			alert($('#name').val() + ' さん こんにちは');
-		}
-	});
-});
-</script>
 </body>
 </html>
